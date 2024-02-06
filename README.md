@@ -87,7 +87,7 @@ class _PayUIState extends State<PayUI> {
 }
 ```
 
-The provided code is a Node.js server using the Express framework to handle two different POST routes. It seems to be implementing an integration with the PhonePe payment gateway and sending messages back to a Flutter app using a JavaScript channel.
+The provided code is a Node.js server using the Express framework to handle two different POST routes. It is required for the integration with the PhonePe payment gateway and sending messages back to a Flutter app using a JavaScript channel.
 
 Here's a breakdown of the code:
 
@@ -113,11 +113,8 @@ Here's a breakdown of the code:
 5. **Export Router:**
    - The router is exported so that it can be used in other parts of the application.
 
-The code appears to handle two different use cases. The first route ("https://api.phonepe.com/apis/hermes/pg/v1/pay") is probably responsible for initiating a payment request with the PhonePe payment gateway and forwarding the response back to the client. The second route ("/view") is generating an HTML content with JavaScript to communicate with a Flutter app through a 'Toaster' JavaScript channel.
+The code handles two different use cases. The first route ("https://api.phonepe.com/apis/hermes/pg/v1/pay") is  responsible for initiating a payment request with the PhonePe payment gateway and forwarding the response back to the client. The second route ("/view") is generating an HTML content with JavaScript to communicate with a Flutter app through a 'Toaster' JavaScript channel.
 
-Overall, this code snippet represents the server-side logic for interacting with the PhonePe payment gateway and establishing communication with a Flutter app. However, the Flutter app's code (especially the JavaScript part that listens to the 'Toaster' channel) is not provided here, so the full integration details are not available.
-
-I apologize for the confusion. Unfortunately, I can only provide explanations for the code you have shared. As an AI language model, I don't have access to external servers or databases to execute actual code. However, I can still provide a detailed explanation of the code you shared:
 
 ```javascript
 const express = require('express');
@@ -208,4 +205,3 @@ Please note that this code is specifically designed for a server-side implementa
 
 
 
-Remember, the above code is just a generic structure for understanding how a payment gateway integration might work in Flutter. The actual implementation details can vary depending on the specific payment gateway service and package being used. Be sure to refer to the official documentation of the payment gateway package you are using for accurate and detailed information on its integration process.
